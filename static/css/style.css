@@ -1,0 +1,12 @@
+.theTitle{
+    color: #3cb371;
+    font-size: 16px;
+}
+.theBody{
+    color: #4A4A4A;
+    font-size: 12px;
+}
+ol {
+    text-align: center;
+    list-style-position: inside;
+}

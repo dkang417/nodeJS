@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <ol type="1">
+            <% for (var item in items) { %>
+                <li class="theTitle">
+                    <%= items[item].title%>
+                </li>
+                <li class="theBody">
+                    <%= items[item].body%>
+                </li>
+                <% } %>
+        </ol>
+    </div>
+
+</body>
+
+</html>
