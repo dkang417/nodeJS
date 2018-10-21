@@ -1,5 +1,3 @@
-
-
 const questions = [ 
     {
         question1: 'Tell me a little bit about yourself?',

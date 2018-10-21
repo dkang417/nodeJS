@@ -1,9 +1,7 @@
 const express = require('express');
 const request = require('request');
-
 const typecodeUrl = 'https://jsonplaceholder.typicode.com/posts';
 const questions = require('./models/questions');
-
 
 const appRouter = (app) => {
     app.set('views', __dirname + '/views');
