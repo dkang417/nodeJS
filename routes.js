@@ -8,13 +8,12 @@ const questions = require('./models/questions');
 const appRouter = (app) => {
     app.set('views', __dirname + '/views');
     app.set('view engine', 'ejs');
-
     app.use(express.static(__dirname + "/static"));
-
+    // home page serves static index file
     app.get('/', (req, res) => {
         res.sendFile(__dirname + "/static/index.html");
     })
-
+    
     app.get('/posts', (req, res) => {
         request(typecodeUrl,  (err, response, body) => {
             if (err) {
@@ -49,7 +48,6 @@ const appRouter = (app) => {
     app.all('*', (req, res) => {
         res.status(404).send('Not Found');
     })
-
 }
 
 module.exports = appRouter;

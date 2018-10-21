@@ -10,3 +10,6 @@ ol {
     text-align: center;
     list-style-position: inside;
 }
+a {
+    margin-left: 20px;
+}
