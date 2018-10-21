@@ -9,6 +9,7 @@ const appRouter = (app) => {
     app.set('views', __dirname + '/views');
     app.set('view engine', 'ejs');
     app.use(express.static(__dirname + "/static"));
+
     // home page serves static index file
     app.get('/', (req, res) => {
         res.sendFile(__dirname + "/static/index.html");
